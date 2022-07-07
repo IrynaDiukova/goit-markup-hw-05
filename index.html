@@ -74,9 +74,20 @@
         <section class="baner">
           <div class="baner-container container">
           <h1 class="baner-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="baner-btn btn" type="button">Заказать услугу</button>
+          <button class="baner-btn btn" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </section>
+
+      <!-- Модальное окно -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="close-button" type="button" data-modal-close>
+            <img class="close-icon" src="./images/icons/close.svg" alt="Закрыть">
+          </button>
+        </div>
+    
+      </div>
       
       <!--Секция Внимание к деталям-->
 
@@ -415,6 +426,8 @@
       </div>
 
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
   
 </html>
